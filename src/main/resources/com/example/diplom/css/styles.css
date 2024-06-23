@@ -1,0 +1,245 @@
+.root {
+    -fx-font-family: 'Jura';
+}
+
+/* Дополнительные стили для различных элементов */
+.label, .button, .text-field {
+    -fx-font-family: 'Jura';
+    -fx-font-size: 14px; /* Размер шрифта по желанию */
+    -fx-font-weight: bold;
+}
+
+/* Градиентный фон для AnchorPane */
+.anchor-pane {
+    -fx-background-color: linear-gradient(to bottom right, rgba(183,14,14,1) 0%, rgba(78,9,121,1) 56%, rgba(0,228,255,1) 100%);
+}
+
+/* Найстройка текста в разделе планирования */
+.text-area {
+    -fx-control-inner-background: #33101A;
+    -fx-text-fill: white; /* Цвет текста */
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-style: none;
+}
+
+/* Настройка текста с общей информацией по портфелю */
+.general-information {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+}
+
+#plannerLabel {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+}
+
+#columnName {
+    -fx-alignment: CENTER_LEFT;
+}
+
+#chartsProfit {
+    -fx-font-size: 26px;
+}
+
+/* Прозрачный фон для TableView */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-font-family: 'Jura';
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent; /* Прозрачный фон */
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent; /* Прозрачный фон заголовков */
+}
+
+.table-view .table-column .label {
+    -fx-text-fill: white; /* Цвет текста заголовков */
+}
+
+/* Удаление границ столбцов */
+.table-view .table-row-cell, .table-view .column-header {
+    -fx-border-color: transparent; /* Прозрачные границы */
+    -fx-border-width: 0; /* Без границ */
+}
+
+.table-view .table-cell {
+    -fx-border-color: transparent; /* Прозрачные границы ячеек */
+    -fx-border-width: 0; /* Без границ */
+    -fx-alignment: CENTER; /* Центровка текста */
+}
+
+/* Прозрачный фон для строк и ячеек таблицы */
+.table-view .table-row-cell {
+    -fx-background-color: transparent;
+}
+
+/* Стили для текстовых элементов заголовков */
+.table-view .column-header .label {
+    -fx-background-color: transparent; /* Прозрачный фон для текста заголовков */
+    -fx-text-fill: white; /* Цвет текста заголовков */
+}
+
+/* Базовый стиль для ячеек таблицы */
+.table-view .table-cell {
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+/* Прозрачный фон для заполненных строк и ячеек таблицы */
+.table-view .table-row-cell:filled {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell:filled {
+    -fx-background-color: transparent;
+}
+
+/* Стили для ячеек с положительным значением */
+.positive-cell {
+    -fx-text-fill: green;
+}
+
+/* Стили для ячеек с отрицательным значением */
+.negative-cell {
+    -fx-text-fill: red;
+}
+
+/* Стили для ячеек с нулевым значением */
+.zero-cell {
+    -fx-text-fill: black;
+}
+
+/* Стилизация стрелки ChoiceBox */
+.choice-box .arrow {
+    -fx-background-color: transparent;
+    -fx-padding: 5px;
+    -fx-border-color: #C2C2FF;
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+}
+/* -------- Cтили для fxml Planner --------- */
+/* --------                        --------- */
+.TextArea {
+
+}
+
+/* -------- Cтили для поля стоимости покупки скина --------- */
+/* --------                                        --------- */
+
+#textPurchasePrice {
+    -fx-background-color: transparent; /* Фон прозрачный */
+    -fx-text-fill: white; /* Цвет текста белый, чтобы он был виден */
+    -fx-border-color: #C2C2FF; /* Цвет границы */
+    -fx-border-width: 3px; /* Толщина границы */
+    -fx-border-radius: 10px; /* Радиус округления границ */
+    -fx-text-fill: white; /* Цвет текста */
+    -fx-padding: 5px; /* Внутренние отступы */
+}
+#textPurchasePrice:focused {
+    -fx-border-color: #FFD81D; /* Цвет границы при фокусе */
+}
+
+#textPurchasePrice:hover {
+    -fx-border-color: #0066cc; /* Цвет границы при наведении */
+}
+
+/* -------- Cтили для комбо и В Боксов --------- */
+/* --------                            --------- */
+
+.vbox {
+    -fx-background-color: transparent; /* Фон прозрачный */
+}
+
+.combo-box {
+     -fx-background-color: transparent;
+     -fx-border-color: transparent;
+     -fx-background-color: transparent; /* Фон прозрачный */
+     -fx-text-fill: white; /* Цвет текста белый */
+     -fx-border-color: #C2C2FF; /* Цвет границы */
+     -fx-border-width: 3px; /* Толщина границы */
+     -fx-border-radius: 10px; /* Радиус округления границ */
+ }
+ .combo-box .arrow-button {
+     -fx-background-color: transparent; /* Фон стрелки прозрачный */
+ }
+
+ .combo-box .list-view {
+     -fx-background-color: transparent;
+ }
+
+ .combo-box .list-cell {
+     -fx-background-color: transparent;
+     -fx-text-fill: white; /* Белый цвет текста */
+ }
+
+/* Прозрачный Popup внутри ComboBox */
+.combo-box-popup {
+    -fx-background-color: transparent;
+}
+ .combo-box-base {
+     -fx-background-color: transparent;
+ }
+
+ .combo-box .button {
+     -fx-background-color: transparent;
+ }
+
+.combo-box .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: rgba(0, 0, 0, 0.5); /* Темный фон списка с прозрачностью */
+    -fx-border-color: #C2C2FF; /* Цвет границы списка */
+    -fx-border-width: 1px; /* Толщина границы списка */
+    -fx-border-radius: 10px; /* Радиус округления границ списка */
+}
+
+/* -------- Базовые стили для кнопок --------- */
+/* --------                          --------- */
+
+.button {
+        -fx-background-color: linear-gradient(#7b42f6, #5a29d7);
+        -fx-background-radius: 15;
+        -fx-text-fill: white;
+        -fx-padding: 3 20;
+        -fx-font-size: 10px;
+        -fx-font-family: 'Jura', sans-serif;
+        -fx-border-color: #C2C2FF; /* Цвет границы */
+        -fx-border-width: 3px; /* Толщина границы */
+        -fx-border-radius: 15;
+        -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 1);
+        -fx-cursor: hand;
+        -fx-transition: background-color 0.3s ease;
+        -fx-pref-height: 10px;
+}
+
+/* Стиль для всех кнопок*/
+.mainButton {
+    -fx-font-size: 16px;
+    -fx-pref-height: 30px;
+    -fx-padding: 3 20;
+}
+
+/* Стили для кнопок при наведении курсора */
+.button:hover {
+    -fx-background-color: linear-gradient(#5a29d7, #3b18a8);
+}
+
+/* Стили для кнопок при нажатии */
+.button:pressed {
+    -fx-background-color: linear-gradient(#3b18a8, #FFD81D);
+}
+
+/* Стили для кнопок с фокусом */
+.button:focused {
+    -fx-border-color: #7b42f6;
+}
